@@ -22,22 +22,16 @@ namespace ConsoleApplication1
 
     public class MyList : IEnumerable<int>
     {
+        private List<int> _list = new List<int>();
 
-        public IEnumerable<int> Sequence()
+        public MyList()
         {
-            int i = 0;
-            for (i = 0; i < 10; i++)
-            {
-                yield return i;
-            }
+            _list.AddRange(new [] {1,2,3,4,5});           
         }
 
         public IEnumerator<int> GetEnumerator()
         {
-            yield return 1;
-            yield return 2;
-            yield return 3;
-            yield return 4;
+            return _list.GetEnumerator();
         }
 
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
