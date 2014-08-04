@@ -51,7 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NOTE ParallelCORRECTASyncSoapSvcCall.cs">
+    <Compile Include="NOTEAsyncCORRECTAsyncSoapSvcCall.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

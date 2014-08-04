@@ -29,7 +29,6 @@ namespace FunctionalProgramming
 
         public static List<string> callMultipleServicesParallel()
         {
-            var tasks = new List<Task<bool>>();
             var responseList = new List<string>();
             Parallel.ForEach(userList, user => 
             {
@@ -46,7 +45,8 @@ namespace FunctionalProgramming
     }
 }
 /*
-  Result : PASSED ASYNC (8 sec for 10 requests with Async, while with sync it would have been 10*4 = 40 sec).Also, 10 threads in all
+  Result : PASSED ASYNC (8 sec for 10 requests with Async, while with sync it would have been 10*4 = 40 sec).Also, 10 threads in all.
+  See that the same thread that fires the request waits for the response and then processes the response
 4: Executing request for user 5 at time 8:45:36 PM
 3: Executing request for user 3 at time 8:45:36 PM
 1: Executing request for user 1 at time 8:45:36 PM
