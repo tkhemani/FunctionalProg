@@ -51,9 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NOTEAsyncCORRECTAsyncSoapSvcCall.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="PartialApplicationOfFunctions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\SampleSoapSvc\Reference.cs">
       <AutoGen>True</AutoGen>
